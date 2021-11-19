@@ -1,5 +1,7 @@
 ---
 - name: Converge
   hosts: all
-  collections:
-  - {{ cookiecutter.namespace_slug }}.{{ cookiecutter.collection_slug }}
+  tasks:
+    - name: Include {{ cookiecutter.role_slug }}
+      include_role:
+        name: {{ cookiecutter.role_slug }}
