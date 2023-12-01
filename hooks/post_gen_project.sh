@@ -1,4 +1,4 @@
-# #!/usr/bin/env bash
+#!/usr/bin/env bash
 # set -e
 
 # cd {{ cookiecutter.collection_slug }}
