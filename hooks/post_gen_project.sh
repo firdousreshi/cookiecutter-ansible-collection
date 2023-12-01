@@ -42,26 +42,26 @@ cd "$PROJECT_DIR"
 # Initialize Git repo
 git init
 
-# Set up Python environment using Poetry
-if [ ! -f "pyproject.toml" ]; then
-    poetry init --no-interaction
-fi
+# # Set up Python environment using Poetry
+# if [ ! -f "pyproject.toml" ]; then
+#     poetry init --no-interaction
+# fi
 
-# Install dependencies
-poetry install
+# # Install dependencies
+# poetry install
 
-# Create and activate a virtual environment
-poetry env use python3
+# # Create and activate a virtual environment
+# poetry env use python3
 
-# Compile Python production requirements
-printf "Setting up Python requirements\n"
-if [ -f "pyproject.toml" ]; then
-    printf "Compiling Python production requirements\n"
-    poetry update
-fi
+# # Compile Python production requirements
+# printf "Setting up Python requirements\n"
+# if [ -f "pyproject.toml" ]; then
+#     printf "Compiling Python production requirements\n"
+#     poetry update
+# fi
 
-# Create initial Git commit
-git add .
-git config user.email "{{ cookiecutter.email }}"
-git config user.name "{{ cookiecutter.author }}"
-git commit -n -m "First commit using Cookiecutter Template"
+# # Create initial Git commit
+# git add .
+# git config user.email "{{ cookiecutter.email }}"
+# git config user.name "{{ cookiecutter.author }}"
+# git commit -n -m "First commit using Cookiecutter Template"
